@@ -47,7 +47,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   margin: 0 auto;
   width: 1440px;
 }
@@ -324,7 +324,7 @@ body {
   margin-bottom: 60px;
   font-weight: 400;
   font-size: 48px;
-  line-height: 1.66;
+  line-height: 1.16;
   color: #ffffff;
 }
 .blog-top-article-link {
@@ -350,6 +350,7 @@ body {
   color: #000000;
 }
 .blog-item-text {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.39;
   color: #000000;
@@ -376,6 +377,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 141px;
+  border-bottom: 1px solid #000000;;
 }
 .footer-list {
   display: flex;
