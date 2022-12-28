@@ -1,3 +1,7 @@
+:root {
+  --primary-text: #000000;
+  --accent: #f7941e;
+}
 html {
   box-sizing: border-box;
 }
@@ -45,6 +49,7 @@ img {
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--primary-text);
 }
 .container {
   /* border: 1px solid teal; */
@@ -87,7 +92,6 @@ body {
   padding-bottom: 42px;
   font-size: 18px;
   line-height: 1.67;
-  color: #000000;
 }
 .header-btn {
   margin-left: auto;
@@ -96,9 +100,9 @@ body {
   font-size: 18px;
   line-height: 1.22;
   text-transform: uppercase;
-  color: #f7941e;
+  color: var(--accent);
   background-color: transparent;
-  border: 1px solid #f7941e;
+  border: 1px solid var(--accent);
   border-radius: 5px;
 }
 /* ========== /Navigation Bar ========== */
@@ -122,14 +126,12 @@ body {
 .hero-title {
   margin-bottom: 36px;
   font-size: 56px;
-  line-height: 1.23;
-  color: #000000;
+  line-height: 1.23;;
 }
 .hero-discription {
   margin-bottom: 60px;
   font-size: 20px;
-  line-height: 1.4;
-  color: #000000;
+  line-height: 1.4;;
 }
 .hero-btn {
   padding: 18px 24px;
@@ -138,8 +140,8 @@ body {
   line-height: 1.22;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #f7941e;
-  border: 1px solid #f7941e;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 5px;
 }
 /* ========== /Hero Side Image Right ========== */
@@ -163,15 +165,13 @@ body {
 .feature-title {
   margin-bottom: 36px;
   font-size: 32px;
-  line-height: 1.4;
-  color: #000000;
+  line-height: 1.4;;
 }
 .feature-discription {
   margin-bottom: 60px;
   font-size: 20px;
   line-height: 1.4;
-  text-align: justify;
-  color: #000000;
+  text-align: justify;;
 }
 .feature-btn {
   padding: 18px 24px;
@@ -180,8 +180,8 @@ body {
   line-height: 1.3;
   text-transform: uppercase;
   background-color: transparent;
-  color: #f7941e;
-  border: 1px solid #f7941e;
+  color: var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 5px;
 }
 /* ========== /Feature Split Right ==========*/
@@ -198,14 +198,12 @@ body {
 .posts-title {
   margin-bottom: 23px;
   font-size: 32px;
-  line-height: 1.88;
-  color: #000000;
+  line-height: 1.88;;
 }
 .posts-discription {
   margin-bottom: 64px;
   font-size: 18px;
-  line-height: 1.36;
-  color: #000000;
+  line-height: 1.36;;
 }
 .posts-list {
   display: flex;
@@ -228,13 +226,12 @@ body {
 .posts-item-title {
   margin-bottom: 74px;
   font-size: 20px;
-  line-height: 1.2;
-  color: #000000;
+  line-height: 1.2;;
 }
 /* ========== /Posts Tall ========== */
 /* ========== CTA Section ========= */
 .cta-section {
-  background-color: #f7941e;
+  background-color: var(--accent);
   padding-top: 81px;
   padding-bottom: 69px;
 }
@@ -244,14 +241,12 @@ body {
 .cta-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.4;
-  color: #000000;
+  line-height: 1.4;;
 }
 .cta-discription {
   font-weight: 400;
   font-size: 32px;
-  line-height: 1.4;
-  color: #000000;
+  line-height: 1.4;;
 }
 .cta-button-primary {
   margin-left: auto;
@@ -261,8 +256,8 @@ body {
   line-height: 1.34;
   text-transform: uppercase;
   color: #ffffff;
-  background: #000000;
-  border: 1px solid #000000;
+  background: var(--primary-text);
+  border: 1px solid var(--primary-text)
   border-radius: 5px;
 }
 .cta-button-secondary {
@@ -272,9 +267,9 @@ body {
   font-size: 18px;
   line-height: 1.34;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--primary-text);
   background: inherit;
-  border: 1px solid #000000;
+  border: 1px solid var(--primary-text);
   border-radius: 5px;
 }
 .cta-container {
@@ -297,14 +292,12 @@ body {
   font-size: 32px;
   line-height: 1.88;
   text-align: center;
-  color: #000000;
 }
 .blog-top-discription {
   margin-bottom: 71px;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
-  color: #000000;
 }
 .blog-top-article {
   margin-bottom: 40px;
@@ -347,18 +340,15 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.42;
-  color: #000000;
 }
 .blog-item-text {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.39;
-  color: #000000;
 }
 .blog-item-link {
   font-size: 14px;
   line-height: 1.43;
-  color: #000000;
 }
 /*  ========== /Posts Blog Top ========== */
 /* ========== Footer Center ========== */
@@ -384,7 +374,7 @@ body {
   gap: 81px;
 }
 .footer-logo {
-  color: #f7941e;
+  color: var(--accent);
 }
 .footer-icon-list {
   margin-bottom: 72px;
@@ -411,12 +401,10 @@ body {
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
-  color: #000000;
 }
 .footer-list-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
-  color: #000000;
 }
 /* ========== /Footer Center ========== */
