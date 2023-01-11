@@ -74,11 +74,18 @@ body {
   font-family: "Homemade Apple", cursive;
   font-size: 18px;
   line-height: 2.17;
+  color: #231f20;
+
+  transition: color 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent);
+  transform: scale(1.1);
 }
 .header-logo {
   padding-top: 38px;
   padding-bottom: 38px;
-  color: #231f20;
 }
 .header-list {
   margin-left: 433px;
@@ -92,6 +99,13 @@ body {
   padding-bottom: 42px;
   font-size: 18px;
   line-height: 1.67;
+
+  transition: color 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.header-list-link:hover,
+.header-list-link:focus {
+  color: var(--accent);
+  transform: scale(1.1);
 }
 .header-btn {
   margin-left: auto;
@@ -104,6 +118,17 @@ body {
   background-color: transparent;
   border: 1px solid var(--accent);
   border-radius: 5px;
+
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+.header-btn:hover,
+.header-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+.header-btn:active {
+  transform: scale(0.95);
 }
 /* ========== /Navigation Bar ========== */
 /* ========== Hero Side Image Right ========== */
@@ -126,12 +151,12 @@ body {
 .hero-title {
   margin-bottom: 36px;
   font-size: 56px;
-  line-height: 1.23;;
+  line-height: 1.23;
 }
 .hero-discription {
   margin-bottom: 60px;
   font-size: 20px;
-  line-height: 1.4;;
+  line-height: 1.4;
 }
 .hero-btn {
   padding: 18px 24px;
@@ -143,6 +168,10 @@ body {
   background-color: var(--accent);
   border: 1px solid var(--accent);
   border-radius: 5px;
+  transition: transform 500ms ease-in-out;
+}
+.hero-btn:active {
+  transform: scale(0.9);
 }
 /* ========== /Hero Side Image Right ========== */
 /* ========== Feature Split Right ==========*/
@@ -165,13 +194,13 @@ body {
 .feature-title {
   margin-bottom: 36px;
   font-size: 32px;
-  line-height: 1.4;;
+  line-height: 1.4;
 }
 .feature-discription {
   margin-bottom: 60px;
   font-size: 20px;
   line-height: 1.4;
-  text-align: justify;;
+  text-align: justify;
 }
 .feature-btn {
   padding: 18px 24px;
@@ -183,6 +212,16 @@ body {
   color: var(--accent);
   border: 1px solid var(--accent);
   border-radius: 5px;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+.feature-btn:hover,
+.feature-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+.feature-btn:active {
+  transform: scale(0.9);
 }
 /* ========== /Feature Split Right ==========*/
 /* ========== Posts Tall ========== */
@@ -198,12 +237,12 @@ body {
 .posts-title {
   margin-bottom: 23px;
   font-size: 32px;
-  line-height: 1.88;;
+  line-height: 1.88;
 }
 .posts-discription {
   margin-bottom: 64px;
   font-size: 18px;
-  line-height: 1.36;;
+  line-height: 1.36;
 }
 .posts-list {
   display: flex;
@@ -213,20 +252,20 @@ body {
   flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: left;
   background-color: #fafafa;
+  transition: filter 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 .posts-list-item:hover,
 .posts-list-item:focus {
   background-color: #ffffff;
   filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 }
-
 .posts-item-content {
   padding: 24px;
 }
 .posts-item-title {
   margin-bottom: 74px;
   font-size: 20px;
-  line-height: 1.2;;
+  line-height: 1.2;
 }
 /* ========== /Posts Tall ========== */
 /* ========== CTA Section ========= */
@@ -241,12 +280,12 @@ body {
 .cta-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.4;;
+  line-height: 1.4;
 }
 .cta-discription {
   font-weight: 400;
   font-size: 32px;
-  line-height: 1.4;;
+  line-height: 1.4;
 }
 .cta-button-primary {
   margin-left: auto;
@@ -257,8 +296,10 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background: var(--primary-text);
-  border: 1px solid var(--primary-text)
+  border: 1px solid var(--primary-text);
   border-radius: 5px;
+
+  transition: transform 500ms ease-in-out;
 }
 .cta-button-secondary {
   margin-left: 16px;
@@ -271,6 +312,12 @@ body {
   background: inherit;
   border: 1px solid var(--primary-text);
   border-radius: 5px;
+
+  transition: transform 500ms ease-in-out;
+}
+.cta-button-primary:active,
+.cta-button-secondary:active {
+  transform: scale(0.95);
 }
 .cta-container {
   display: flex;
@@ -324,6 +371,11 @@ body {
   font-size: 18px;
   line-height: 1.39;
   color: #ffffff;
+  transition: color 500ms ease-in-out;
+}
+.blog-top-article-link:hover,
+.blog-top-article-link:focus {
+  color: var(--accent);
 }
 .blog-top-list {
   display: flex;
@@ -349,6 +401,12 @@ body {
 .blog-item-link {
   font-size: 14px;
   line-height: 1.43;
+
+  transition: color 500ms ease-in-out;
+}
+.blog-item-link:hover,
+.blog-item-link:focus {
+  color: var(--accent);
 }
 /*  ========== /Posts Blog Top ========== */
 /* ========== Footer Center ========== */
@@ -367,14 +425,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 141px;
-  border-bottom: 1px solid #000000;;
+  border-bottom: 1px solid #000000;
 }
 .footer-list {
   display: flex;
   gap: 81px;
-}
-.footer-logo {
-  color: var(--accent);
 }
 .footer-icon-list {
   margin-bottom: 72px;
@@ -382,6 +437,17 @@ body {
   align-items: center;
   justify-content: center;
   gap: 24px;
+}
+.footer-list-link {
+  transition: color 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+.footer-logo {
+  color: var(--accent);
 }
 .footer-icon-link {
   display: flex;
@@ -391,6 +457,11 @@ body {
 .footer-icon-item {
   height: 40px;
   width: 40px;
+
+  transition: fill 500ms ease-in-out;
+}
+.footer-icon-item:hover {
+  fill: var(--accent);
 }
 .footer-copyright {
   display: flex;
